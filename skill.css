@@ -1,0 +1,48 @@
+body 
+{
+	font-family:"Comic Sans MS", cursive, sans-serif
+}
+
+
+
+@font-face {
+font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.text{
+	text-align: center;
+	color: white;
+}
+h2 {
+    color: white;
+    text-align: center;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+	 text-decoration: underline;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+}
+
+img {
+    position: absolute;
+    top: 70; bottom: 0; left: 0; right:0;
+    margin: auto;
+}
+
+imgleft  {
+    float: left;
+}
+
+imgright  {
+    float: right;
+}
