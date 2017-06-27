@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+
+<head>
+
+
+</head>
+<link rel="stylesheet" type="text/css" href="skill.css">
+
+<body background="back.jpg">
+
+
+<h2 class="Text"> Knowing how much DPS you do can be hard! Sometimes seeing where you are on the meters during a fight can be troublesome.  </h2>
+<h2 class="Text"> This tool will show you the DPS you sim for! All you need to do is enter your item level and your class! Because that's all that matters, right? </h2>
+
+
+<div class="wrapper">
+<img id="imageToSwap" src="images/d.gif" />
+
+<br/><br/>
+
+<select id="dlist" onChange="swapImage()">
+<option value="logo.png">------Select------</option>
+<option value="Warrior.png">Warrior</option>
+<option value="Paladin.png">Paladin</option>
+<option value="Hunter.png">Hunter</option>
+<option value="Rogue.png">Rogue</option>
+<option value="Priest.png">Priest</option>
+<option value="DeathKnight.png">Death Knight</option>
+<option value="Shaman.png">Shaman</option>
+<option value="Mage.png">Mage</option>
+<option value="Warlock.png">Warlock</option>
+<option value="Monk.png">Monk</option>
+<option value="Druid.png">Druid</option>
+<option value="DemonHunter.png">Demon Hunter</option>
+
+</select>
+</div>
+<script type="text/javascript">
+function swapImage(){
+	var image = document.getElementById("imageToSwap");
+	var dropd = document.getElementById("dlist");
+	image.src = dropd.value;	
+};
+</script>
+</body>
+</html>
+<h3>
+<div class="wrapper">
+<button onclick="myFunction(); playSound()">Sim your DPS!</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    document.getElementById("demo").innerHTML = Math.floor((Math.random() * 1000000) + 100000);
+}
+</script>
+
+<audio id="audio" src="mlg.ogg" autostart="false"></audio>
+<script>
+    function playSound() {
+          var sound = document.getElementById("audio");
+          sound.play();
+      }
+    </script>
+</div>
+</h3>
+</body>
+</html>
