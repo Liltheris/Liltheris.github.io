@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+
+<head>
+
+
+
+<link rel="stylesheet" type="text/css" href="skill.css">
+
+<body background="back.jpg">
+
+
+<h2 class="Text"> Final step!  </h2>
+<h2 class="Text"> This button shall show your DPS that you deserve! </h2>
+
+
+
+<a style="color:#0d1a2d" href="secret.html"> click me</a>
+
+
+ <img id="dps" src="dps.png" width="50%" ">
+</head>
+<div class="button">
+
+<button onclick="myFunction(); playSound();">Sim your DPS!</button>
+
+<p id="demo"></p>
+
+</body>
+<script>
+function myFunction() {
+    document.getElementById("demo").innerHTML = Math.floor((Math.random() * 1500000) + 100000);
+}
+</script>
+<script>
+function showImg()
+{
+    x=document.getElementById("dps")
+    x.style.visibility="visible";
+}
+    </script>
+<audio id="audio" src="mlg.ogg" autostart="false"></audio>
+<script>
+    function playSound() {
+          var sound = document.getElementById("audio");
+          sound.play();
+      }
+    </script>
+
+
+</div>
+
+
+</body>
+</html>

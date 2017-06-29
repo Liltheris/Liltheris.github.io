@@ -18,7 +18,7 @@
 <img id="imageToSwap" src="images/d.gif" />
 
 <br/><br/>
-
+<p> Class! </p>
 <select id="dlist" onChange="swapImage()">
 <option value="logo.png">------Select------</option>
 <option value="Warrior.png">Warrior</option>
@@ -35,6 +35,11 @@
 <option value="DemonHunter.png">Demon Hunter</option>
 
 </select>
+<p> Item level! </p>
+<form action="Sim.html">
+<form>
+<input type="number" name="ilevel" min="700" >
+</form>
 </div>
 <script type="text/javascript">
 function swapImage(){
@@ -45,26 +50,8 @@ function swapImage(){
 </script>
 </body>
 </html>
-<h3>
-<div class="wrapper">
-<button onclick="myFunction(); playSound()">Sim your DPS!</button>
 
-<p id="demo"></p>
 
-<script>
-function myFunction() {
-    document.getElementById("demo").innerHTML = Math.floor((Math.random() * 1000000) + 100000);
-}
-</script>
-
-<audio id="audio" src="mlg.ogg" autostart="false"></audio>
-<script>
-    function playSound() {
-          var sound = document.getElementById("audio");
-          sound.play();
-      }
-    </script>
-</div>
 </h3>
 </body>
 </html>

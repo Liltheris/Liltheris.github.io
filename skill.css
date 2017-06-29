@@ -26,11 +26,14 @@ h3 {
 
 .wrapper {
     text-align: center;
+	color:white;
 }
 
 .button {
-    position: absolute;
-    top: 50%;
+   text-align: center;
+ font-size: 82px;
+ color:magenta;
+   
 }
 
 img {
@@ -45,4 +48,9 @@ imgleft  {
 
 imgright  {
     float: right;
+}
+
+.hide
+{
+display:none;
 }
